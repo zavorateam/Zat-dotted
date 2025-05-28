@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/connectionTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите тип подключения"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/connectionTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCustomProxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Свой прокси" />
+
+        <RadioButton
+            android:id="@+id/radioTor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tor (Orbot)" />
+
+        <RadioButton
+            android:id="@+id/radioNoEncryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Без шифрования" />
+
+    </RadioGroup>
+
+</LinearLayout>
